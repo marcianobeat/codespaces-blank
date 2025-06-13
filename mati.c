@@ -21,7 +21,15 @@ int main(){
     unsigned long int compara5 = soma == mutiplicacao;
     short int compara6 = soma != mutiplicacao;
  
-    printf (" %ld \n %u \n %lld \n %lf \n %lu \n %d \n ",compara1, compara2, compara3, compara4, compara5, compara6);
+    printf (" %ld \n %u \n %lld \n %1lf \n %lu \n %d \n ",compara1, compara2, compara3, compara4, compara5, compara6);
+
+
+
+    for (int i = 0; i < 10; i++) {
+        if (i == 5) continue; // Pula a iteração quando i é 5
+        if (i == 8) break;    // Sai do loop quando i é 8
+        printf("%d ", i);
+    }
 
     return 0;
 }
